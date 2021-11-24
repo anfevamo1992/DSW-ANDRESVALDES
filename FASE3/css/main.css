@@ -1,0 +1,89 @@
+*{
+    margin:5px;
+    border-radius: 3px;
+}
+
+header{
+    background-color: rgb(226, 84, 17);
+    text-align: center;     
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#primer{
+    background-color: rgb(243, 145, 54);
+    text-align: center;     
+    color: rgb(0, 0, 0);
+}
+p{
+    background-color: rgb(243, 145, 54);
+    text-align: center;     
+    color: rgb(0, 0, 0);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+section{
+    background-color: rgb(233, 103, 71);
+    grid-template-columns: 1/4 ;
+}
+aside{
+    background-color: rgb(233, 103, 71);
+    grid-template-columns: 4/5 ;
+}
+footer{
+    background-color: rgb(231, 112, 0);
+    text-align: center;     
+    color: rgb(253, 242, 242);
+    padding:11px;
+}
+.menu {
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    /* padding: 2px; */
+    color: #fff;
+    background: rgb(100, 4, 4);
+}
+.menu li {
+    width: 100%;
+    text-align: center;
+}
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background:rgb(216, 9, 9);
+    /* height: 25px; */
+    text-decoration: none;
+}
+.dropdown li {
+    display: none;
+}s
+.menu li:hover .dropdown li {
+    display: block;
+}
+.menu a:hover {
+    background:blueviolet;
+    color: #fff;
+
+}
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header{
+        flex-direction: column;/* coloca los elementos verticales. */
+        align-items: center;
+        
+    }
+}
